@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6246897731651733363}
-  - component: {fileID: 2910073604609579386}
   - component: {fileID: 9163504623712633089}
+  - component: {fileID: 2910073604609579386}
   - component: {fileID: 2018218088338230220}
   m_Layer: 0
   m_Name: Cactus
@@ -34,19 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2910073604609579386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3453380745456595575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 602d580e6c915924dabe931a646984c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  starCost: 50
 --- !u!95 &9163504623712633089
 Animator:
   serializedVersion: 3
@@ -66,6 +53,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2910073604609579386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3453380745456595575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 602d580e6c915924dabe931a646984c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  starCost: 50
 --- !u!114 &2018218088338230220
 MonoBehaviour:
   m_ObjectHideFlags: 0
