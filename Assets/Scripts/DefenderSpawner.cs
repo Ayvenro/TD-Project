@@ -41,6 +41,7 @@ public class DefenderSpawner : MonoBehaviour
     {
         defender = defenderToSelect;
     }
+
     private void SpawnDefender(Vector2 roundedPos)
     {
         Defender newDefender = Instantiate(defender, roundedPos, Quaternion.identity);
