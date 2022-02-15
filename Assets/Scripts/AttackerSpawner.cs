@@ -8,7 +8,7 @@ public class AttackerSpawner : MonoBehaviour
     [SerializeField] private int minSpawnDelay;
     [SerializeField] private int maxSpawnDelay;
     [SerializeField] private Attacker attackerPrefab;
-    // Start is called before the first frame update
+
     private IEnumerator Start()
     {
         while (spawn)
@@ -22,11 +22,5 @@ public class AttackerSpawner : MonoBehaviour
     {
         Attacker newAttacker = Instantiate(attackerPrefab, transform.position, transform.rotation);
         newAttacker.transform.parent = transform;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

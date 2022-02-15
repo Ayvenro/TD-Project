@@ -10,11 +10,7 @@ public class DefenderSpawner : MonoBehaviour
         AttempToPlaceDefenderAt(GetSquareClicked());
     }
 
-    public void SetSelectedDefender(Defender defenderToSelect)
-    {
-        defender = defenderToSelect;
-    }
-
+    #region Set Position
     private void AttempToPlaceDefenderAt(Vector2 gridPos)
     {
         StarDisplay starDisplay = FindObjectOfType<StarDisplay>();
@@ -40,7 +36,11 @@ public class DefenderSpawner : MonoBehaviour
         float newY = Mathf.RoundToInt(rawWorldPos.y);
         return new Vector2(newX, newY);
     }
-
+    #endregion
+    public void SetSelectedDefender(Defender defenderToSelect)
+    {
+        defender = defenderToSelect;
+    }
     private void SpawnDefender(Vector2 roundedPos)
     {
         Defender newDefender = Instantiate(defender, roundedPos, Quaternion.identity);
