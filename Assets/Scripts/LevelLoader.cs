@@ -23,14 +23,8 @@ public class LevelLoader : MonoBehaviour
         LoadNextScene();
     }
 
-    private void LoadNextScene()
+    public void LoadNextScene()
     {
         SceneManager.LoadScene(currentSceneIndex + 1);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
