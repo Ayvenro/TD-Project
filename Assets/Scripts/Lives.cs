@@ -28,7 +28,7 @@ public class Lives : MonoBehaviour
             UpdateDisplay();
             if (lives <= amount)
             {
-                SceneManager.LoadScene("Start Screen");
+                FindObjectOfType<LevelController>().HandleLoseCondition();
             }
         }
     }
