@@ -38,4 +38,13 @@ public class LevelLoader : MonoBehaviour
     {
         SceneManager.LoadScene("Start Screen");
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+    public void LoadOptionsMenu()
+    {
+        SceneManager.LoadScene("Options Screen");
+    }    
 }

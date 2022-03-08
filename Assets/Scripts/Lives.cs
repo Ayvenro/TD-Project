@@ -6,13 +6,15 @@ using TMPro;
 
 public class Lives : MonoBehaviour
 {
-    [SerializeField] private int lives = 50;
+    private int lives = 100;
     private TextMeshProUGUI liveText;
 
     private void Start()
     {
+        lives -= PlayerPrefsController.GetDifficulty() * 10;
         liveText = GetComponent<TextMeshProUGUI>();
         UpdateDisplay();
+        Debug.Log("Current lives: " + lives);
     }
 
     private void UpdateDisplay()

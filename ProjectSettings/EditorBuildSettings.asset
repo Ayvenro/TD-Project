@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Splash Screen.unity
     guid: 4024a5c6944963c4f86f83c3a4503973
   - enabled: 1
+    path: Assets/Scenes/Options Screen.unity
+    guid: 26a917857bd51a7459e9f0306bfa390c
+  - enabled: 1
     path: Assets/Scenes/Start Screen.unity
     guid: db230b63a12987740a6147b767d96c5a
   - enabled: 1
